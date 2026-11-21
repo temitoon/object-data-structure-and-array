@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>My Profile and Favourite Colours</h2>
+    <p id="profile"></p>
+    <p id="pet"></p>
+    <p id="favcolor"></p>
+    <p id="before"></p>
+    <p id="after"></p>
+    <script>
+        var student = {
+            name: "Riya",
+            age: 12,
+            grade: 7,
+            hobby: "Drawing",
+            favSport: "Cricket"
+        };
+        var colors = ["white", "black", "red", "green", "blue"];
+
+        document.getElementById("profile").innerHTML = "Name: " + student.name + " | Favourite sport: " + student["favSport"];
+        document.getElementById("pet").innerHTML = "Pet: " + student.pet;
+        document.getElementById("favcolor").innerHTML = "My favourite colour is " + colors[3];
+        document.getElementById("before").innerHTML = "Before pop: " + colors.join(" * ") + " (" + colors.length + " colours)";
+        colors.pop();
+        document.getElementById("after").innerHTML = "After pop: " + colors.join(" * ") + " (" + colors.length + " colours)";
+    </script>
+</body>
+
+</html>
